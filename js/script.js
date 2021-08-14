@@ -22,8 +22,24 @@ $(document).ready(function() {
         $(event.currentTarget).toggleClass("active");
     });
 
-    $(".service .text").click(function() {
-        $(".service p").toggleClass("active");
+    //this is for hover the active paragraph 
+    $("#card1 img").hover(function() {
+        $(".content1 p").toggleClass("active");
+
     });
+    //    $(".service #one").click(function() {
+    //    $(".content1 p").toggleClass("active");
+    //  });
+
+
+    $("#card2 img").hover(function() {
+        $(".content2 p").toggleClass("active");
+    });
+
+    $("#card3 img").hover(function() {
+        $(".content3 p").toggleClass("active");
+    });
+
+
 
 });
