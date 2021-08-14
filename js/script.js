@@ -21,4 +21,9 @@ $(document).ready(function() {
     $('.navbar .menu').on('click', event => {
         $(event.currentTarget).toggleClass("active");
     });
+
+    $(".service .text").click(function() {
+        $(".service p").toggleClass("active");
+    });
+
 });
