@@ -16,6 +16,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 70px;
@@ -234,25 +238,35 @@ section {
     background: rgba(255, 255, 255, 0.76);
     text-align: center;
     border-radius: .5rem;
-    padding: 20px 25px;
+    padding: 2em 1.5em;
+    transition-delay: 0.3s;
 }
 
 .service .service-content .card:hover {
     background: rgb(252, 252, 234);
+    transition-delay: 0.3s;
 }
 
 .service .service-content .card .box {
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .service .service-content .card .box:hover {
     transform: scale(1.05);
+    transition-delay: 0.3s;
 }
 
 .service .service-content .card img {
     height: 15em;
     width: 15em;
-    box-shadow: .5em .5em .8em;
+    position: relative;
+    cursor: pointer;
+    box-shadow: .5em .5em .4em;
+}
+
+.service .service-content .card img:hover {
+    box-shadow: .7em .7em .4em;
 }
 
 .service .service-content .text {
@@ -274,7 +288,9 @@ section {
     font-size: 1rem;
 }
 
-.service .service-content p.active {
+.service .content1 p.active,
+.service .content2 p.active,
+.service .content3 p.active {
     font-family: Virgula Vulgaris Bold;
     display: block;
     font-size: 1rem;
