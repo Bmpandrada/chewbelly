@@ -177,7 +177,15 @@ section {
     height: 300px;
     width: 300px;
     object-fit: cover;
-    border-radius: 10em
+    border-radius: 10em;
+    transition: .4s ease;
+}
+
+.about .about-content .left img:hover {
+    box-shadow: .5em .5em .5em;
+    color: black;
+    transform: scale(1.1);
+    transition-delay: 0.1;
 }
 
 .about .about-content .right {
@@ -202,10 +210,12 @@ section {
     background: linear-gradient(to bottom, rgba(2, 42, 85, 0.459), rgba(2, 5, 43, 0.486)), url(vibpic/com.jpg) no-repeat top;
     background-size: cover;
     background-attachment: fixed;
+    transition: all 0.5s linear;
+    transition-delay: 0.9s;
 }
 
 .service .title {
-    font-family: montserrat, sans-serif;
+    font-family: Virgula Vulgaris Bold;
     text-align: center;
     font-size: 3rem;
     padding: 2.5rem;
@@ -220,7 +230,7 @@ section {
 }
 
 .service .service-content .card {
-    width: calc(33% - 20px);
+    width: calc(33% - 1em);
     background: rgba(255, 255, 255, 0.76);
     text-align: center;
     border-radius: .5rem;
@@ -240,19 +250,33 @@ section {
 }
 
 .service .service-content .card img {
-    height: 60px;
-    width: 60px;
+    height: 15em;
+    width: 18em;
+    box-shadow: .5em .5em .8em;
 }
 
 .service .service-content .text {
     font-size: 2rem;
-    font-family: montserrat, sans-serif;
+    font-family: spartwell;
     margin: 1rem 0;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.service .service-content .text:hover {
+    color: maroon;
+    text-decoration: underline;
 }
 
 .service .service-content p {
-    font-family: montserrat, sans-serif;
+    font-family: Virgula Vulgaris Bold;
+    display: none;
+    font-size: 1rem;
+}
+
+.service .service-content p.active {
+    font-family: Virgula Vulgaris Bold;
+    display: block;
     font-size: 1rem;
 }
 
@@ -389,7 +413,7 @@ section {
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: montserrat, sans-serif;
+    font-family: Virgula Vulgaris;
 }
 
 .contact .title {
@@ -518,7 +542,7 @@ section {
 /* footer styling*/
 
 footer {
-    font-family: montserrat, sans-serif;
+    font-family: Virgula Vulgaris;
     color: blanchedalmond;
     background: #3b576e;
     background-size: cover;
