@@ -16,10 +16,6 @@
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .max-width {
     max-width: 1300px;
     padding: 0 70px;
@@ -676,7 +672,8 @@ footer span a:hover {
     }
 }
 
-@media (max-width: 690px) {
+
+/*@media (max-width: 690px) {
     .max-width {
         padding: 0 2.5em;
     }
@@ -686,6 +683,36 @@ footer span a:hover {
     .about .about-content .left img {
         width: 250px;
         height: 250px;
+    }
+}*/
+
+@media screen and (min-width: 320px) and (max-width: 690px),
+(min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    .max-width {
+        padding: 0 2.5em;
+    }
+    .service .service-content .card {
+        width: 100%;
+    }
+    .service .service-content .card .box img {
+        width: 100%;
+    }
+    .about .about-content .left img {
+        width: 250px;
+        height: 250px;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 90vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        opacity: 80%;
+        text-align: center;
+        padding-top: 6em;
+        transition: all 0.4s ease;
+        z-index: -1;
     }
 }
 
@@ -698,5 +725,3 @@ footer span a:hover {
         margin: 0;
     }
 }
-
-@media (max-width:375px) {}
